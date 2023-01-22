@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table   //(name = "customer")
+@Table(name = "customers")
 public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int customerId;
 
     private String mobile;

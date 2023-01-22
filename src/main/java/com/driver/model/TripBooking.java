@@ -4,12 +4,12 @@ package com.driver.model;
 import javax.persistence.*;
 
 @Entity
-@Table  //(name = "trip-booking")
+@Table (name = "trip-booking")
 public class TripBooking {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int tripBookingId;
 
     private String fromLocation;

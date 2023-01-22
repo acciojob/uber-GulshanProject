@@ -4,22 +4,22 @@ package com.driver.model;
 import javax.persistence.*;
 
 @Entity
-@Table      //(name = "admins")
+@Table(name = "admins")
 public  class Admin {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int adminId;
 
-    private String username;
+    private String userName;
 
-    private String password;
+    private String passWord;
 
     public Admin() {
     }
 
     public Admin(String username, String password) {
-        this.username = username;
-        this.password = password;
+        this.userName = username;
+        this.passWord = password;
     }
 
     public int getAdminId() {
@@ -31,18 +31,18 @@ public  class Admin {
     }
 
     public String getUsername() {
-        return username;
+        return userName;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.userName = username;
     }
 
     public String getPassword() {
-        return password;
+        return passWord;
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.passWord = password;
     }
 }

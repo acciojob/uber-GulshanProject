@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table  //(name = "drivers")
+@Table (name = "drivers")
 public class Driver {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int driverId;
 
     private String mobile;
